@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Forms */
+.form-card {
+    width: 500px;
+    height: 400px;
+    background-color: #919191;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    background-color: #32a602;
+    color: ghostwhite;
+}
+
+.form-button:hover {
+    opacity: 0.8;
+}
+/* Buttons */
+
+.green-button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #32a602;
+    color: ghostwhite;
+}
+
+.red-button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fe5643;
+}
+
+.blue-button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #5a8cff;
+}
+
+.red-button,
+.green-button,
+.blue-button {
+    color: ghostwhite;
+    border: none;
+    margin: 10px 0px;
+}
+
+.red-button:hover,
+.green-button:hover,
+.blue-button:hover {
+    opacity: 0.8;
+}

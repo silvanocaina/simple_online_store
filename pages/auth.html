@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="../base.css" />
+        <link rel="stylesheet" href="auth.css" />
+        <script src="../scripts/users.js" defer></script>
+        <script src="auth.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="center">
+                <form class="form-card" id="auth-user-form">
+                    <label for="user-name">Nome</label>
+                    <br />
+                    <input
+                        type="text"
+                        id="user-name"
+                        name="username"
+                        class="form-input"
+                    />
+                    <br />
+                    <label for="user-password">Senha</label>
+                    <br />
+                    <input
+                        type="password"
+                        id="user-password"
+                        name="password"
+                        class="form-input"
+                    />
+                    <br />
+                    <input type="submit" value="Entrar" class="form-button" />
+                </form>
+                <button class="blue-button" id="alt-new-user-button">
+                    Não tenho conta
+                </button>
+                <form class="form-card" id="new-user-form">
+                    <label for="user-name">Nome</label>
+                    <br />
+                    <input
+                        type="text"
+                        id="user-name"
+                        name="username"
+                        class="form-input"
+                    />
+                    <br />
+                    <label for="user-email">Email</label>
+                    <br />
+                    <input
+                        type="email"
+                        id="user-email"
+                        name="email"
+                        class="form-input"
+                    />
+                    <br />
+                    <label for="user-password">Senha</label>
+                    <br />
+                    <input
+                        type="password"
+                        id="user-password"
+                        name="password"
+                        class="form-input"
+                    />
+                    <br />
+                    <input type="submit" value="Enviar" class="form-button" />
+                </form>
+                <button class="blue-button" id="alt-auth-user-button">
+                    Já tenho uma conta
+                </button>
+            </div>
+        </main>
+    </body>
+</html>
