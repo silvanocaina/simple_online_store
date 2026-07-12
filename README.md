@@ -1,11 +1,10 @@
 # simple_online_store
 
-Projeto pessoal pára testar conhecimentos basicos
+Projeto pessoal para testar meus conhecimentos basicos
 
-* HTML
-* Javascript
-* CSS
+Estou usando essas tecnologias para construir o projeto:
 
+[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 ## Sobre o projeto
 
 É apenas um simples site frontend de marketplace simples
