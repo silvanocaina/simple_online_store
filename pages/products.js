@@ -4,6 +4,8 @@ let show_list = [];
 start();
 
 async function start() {
+  triage(null, "auth.html");
+
   const products = await get_products();
 
   if (products) {
@@ -40,6 +42,10 @@ const builder_products_list = (products_list) => {
 
     const ui_element = document.createElement("li");
     ui_element.className = "product-card";
+
+    ui_element.addEventListener("click", () => {
+      window.location.href = `product_info.html?id=${item.id}`;
+    });
 
     // Montando o elemento da lista
     ui_element.appendChild(product_img_element);
