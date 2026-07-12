@@ -2,12 +2,15 @@
 
 Projeto pessoal para testar meus conhecimentos basicos
 
-Estou usando essas tecnologias para construir o projeto:
-
-[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 ## Sobre o projeto
 
 É apenas um simples site frontend de marketplace simples
+
+### Tecnologias
+
+Estou usando essas tecnologias para construir o projeto:
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 ### API utilizada
 
