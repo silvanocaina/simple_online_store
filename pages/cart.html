@@ -5,6 +5,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Carrinho</title>
         <link rel="stylesheet" href="../base.css" />
+        <link rel="stylesheet" href="cart.css" />
+        <script src="../scripts/users.js" defer></script>
+        <script src="../scripts/products.js" defer></script>
+        <script src="../scripts/cart.js" defer></script>
+        <script src="cart.js" defer></script>
+        <script src="header.js" defer></script>
     </head>
-    <body></body>
+    <body>
+        <header>
+            <div id="header-tools-left">
+
+            </div>
+            <div id="header-tools-right">
+
+            <p id="username">
+                Name
+            </p>
+            </div>
+        </header>
+        <main>
+            <div id="cart-card">
+                <div class="first-row">
+                    <img class="product-image" />
+                    <div class="product-texts">
+                        <p class="product-name">Sem nome</p>
+                        <p class="product-price">Sem preço</p>
+                        <p class="product-category">Sem Categoria</p>
+                        <div>
+                            <button class="green-button"> + </button>
+                            <button class="red-button" id="add-product-in-cart-button"> - </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-row">
+                    <img class="product-image" />
+                    <div class="product-texts">
+                        <p class="product-name">Sem nome</p>
+                        <p class="product-price">Sem preço</p>
+                        <p class="product-category">Sem Categoria</p>
+                        <div>
+                            <button class="green-button"> + </button>
+                            <button class="red-button" id="add-product-in-cart-button"> - </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

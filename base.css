@@ -30,9 +30,13 @@ body {
 
 header {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: var(--shadow-grey);
     border-bottom: 1px solid var(--shadow-grey-2);
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    justify-content: space-between;
 }
 
 .center {
@@ -82,35 +86,39 @@ header {
 /* Buttons */
 
 .green-button {
-    padding: 10px;
-    border-radius: 8px;
     background-color: #32a602;
-    color: ghostwhite;
 }
 
 .red-button {
-    padding: 10px;
-    border-radius: 8px;
     background-color: #fe5643;
 }
 
 .blue-button {
-    padding: 10px;
-    border-radius: 8px;
     background-color: #5a8cff;
 }
 
 .red-button,
 .green-button,
-.blue-button {
+.blue-button,
+.cart-button{
     color: ghostwhite;
     font-weight: 450;
     border: none;
     margin: 10px 0px;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .red-button:hover,
 .green-button:hover,
-.blue-button:hover {
+.blue-button:hover,
+.cart-button:hover {
     opacity: 0.8;
+}
+
+/* */
+
+.cart-button {
+    margin: 0px;
+    background-color: var(--onyx);
 }

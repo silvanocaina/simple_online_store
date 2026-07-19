@@ -1,1 +1,1 @@
-triage("pages/products.html");
+triage("pages/products.html","pages/auth.html");

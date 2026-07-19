@@ -1,3 +1,22 @@
+const product_image_element = document.getElementById("product-image");
+const product_name_element = document.getElementById("product-name");
+const product_description_element = document.getElementById(
+  "product-description",
+);
+const product_price_element = document.getElementById("product-price");
+const product_category_element = document.getElementById("product-category");
+
+const cart_button = document.getElementById('add-product-in-cart-button')
+const cart = document.getElementById('cart-button')
+
+
+// Adicionar evento de click para o botão de carrinho, onde redirecionar para página de carrinho
+cart.addEventListener('click', () => {
+  // triar para página de carrinho se a autenticação for valida
+  triage('cart.html', 'auth.html')
+})
+
+// Começar a logica
 start();
 
 async function start() {
@@ -17,18 +36,19 @@ async function start() {
 
   if (single_product) {
     build_product_info(single_product);
+
+    cart_button.addEventListener('click', () => {
+      addProductInCart(product_id, 1)
+      uptade_cart_info()
+    })
+
+    uptade_cart_info();
+
   } else {
     alert("Deu erro para pegar o produto especifico no banco de dados");
   }
 }
 
-const product_image_element = document.getElementById("product-image");
-const product_name_element = document.getElementById("product-name");
-const product_description_element = document.getElementById(
-  "product-description",
-);
-const product_price_element = document.getElementById("product-price");
-const product_category_element = document.getElementById("product-category");
 
 function build_product_info(single_product) {
   console.log(single_product);
@@ -44,4 +64,9 @@ function build_product_info(single_product) {
   );
   product_category_element.innerText = single_product.category;
   product_description_element.innerText = single_product.description;
+}
+
+function uptade_cart_info() {
+  const totalProductsInCart = getTotalProductsInCart();
+  cart.innerText = `🛒 ${totalProductsInCart < 100? totalProductsInCart : '99+'}`
 }

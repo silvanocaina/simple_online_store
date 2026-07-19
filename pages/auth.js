@@ -66,6 +66,7 @@ auth_user_form.addEventListener("submit", async (e) => {
 
     // Armazena o token
     setToken(obj_response.token);
+    setUsername(form_data.get('username'))
 
     // Redirecionar para pagina index
     window.location.href = "../index.html";

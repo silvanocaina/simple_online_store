@@ -8,10 +8,27 @@
         <link rel="stylesheet" href="product_info.css" />
         <script src="../scripts/users.js" defer></script>
         <script src="../scripts/products.js" defer></script>
+        <script src="../scripts/cart.js" defer></script>
         <script src="product_info.js" defer></script>
+        <script src="header.js" defer></script>
     </head>
     <body>
-        <header></header>
+        <header>
+            <div id="header-tools-left">
+                <search>
+ads
+                </search>
+            </div>
+            <div id="header-tools-right">
+
+            <button class="cart-button" id="cart-button">
+                🛒
+            </button>
+            <p id="username">
+                Name
+            </p>
+            </div>
+        </header>
         <main>
             <div id="product-card">
                 <div id="first-row">
@@ -22,7 +39,7 @@
                         <p id="product-category">Sem Categoria</p>
                         <div>
                             <button class="green-button">Comprar</button>
-                            <button class="blue-button">
+                            <button class="blue-button" id="add-product-in-cart-button">
                                 Adicionar no carrinho
                             </button>
                         </div>

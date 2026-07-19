@@ -67,3 +67,16 @@ function triage(destination, fallback) {
     window.location.href = fallback;
   }
 }
+
+/* Métodos para UserName */
+
+function setUsername(name) {
+  if (!name) return false;
+
+  localStorage.setItem('username', name)
+}
+
+function getUsername() {
+
+  return localStorage.getItem('username');
+}
