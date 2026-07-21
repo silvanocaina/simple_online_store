@@ -17,7 +17,7 @@ main {
     gap: 20px;
 }
 
-.first-row {
+.row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -34,16 +34,18 @@ main {
     background-color: white;
     width: 150px;
     height: 150px;
+    min-width: 150px;
+    min-height: 150px;
     padding: 10px;
     border-radius: 8px;
 }
 
 .product-name {
     display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .product-price {
