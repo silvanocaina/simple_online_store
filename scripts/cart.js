@@ -92,7 +92,7 @@ function removeProductInCart(productID, amount) {
         data[index].amount -= amount;
       } else {
         // remove da lista
-        data = data.splice(index, 1);
+        data.splice(index, 1);
     }
 
     }

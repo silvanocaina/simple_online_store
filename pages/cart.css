@@ -11,10 +11,18 @@ main {
     border-radius: 8px;
     margin: auto;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     flex-wrap: nowrap;
     padding: 10px;
+}
+
+
+#product-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     gap: 20px;
+
 }
 
 .row {
@@ -58,4 +66,10 @@ main {
 .product-description {
     margin-top: 20px;
     font-size: 20px;
+}
+
+#none-products{
+    color: var(--dim-grey);
+    text-align: center;
+    margin: auto;
 }

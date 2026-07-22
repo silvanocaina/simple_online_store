@@ -20,13 +20,19 @@ async function start() {
  */
 async function build_products_of_cart(products) {
 
+  if (products.length > 0) {
+
   resolved_products = await Promise.all(products.map(async (value) => {
-    return get_single_product(value.productID);
+    return get_single_product(value.productID)
   }))
 
   const products_list = resolved_products.map((product) => {
 
     if (!product) return "";
+
+    const inCart = products.find(value => {
+      return value.productID == product.id;
+    })
 
     return `
     <div class="row">
@@ -38,18 +44,33 @@ async function build_products_of_cart(products) {
             <div>
                 <button class="green-button" onclick="add(${product.id})" > + </button>
                 <button class="red-button"   onclick="reduce(${product.id})"> - </button>
+                <p>${inCart.amount}</p>
             </div>
         </div>
     </div>`;
   })
 
-  list.innerHTML = products_list.join("");
+    list.innerHTML = `<div id="product-list">
+    ${products_list.join("")}
+    </div>
+    <div>
+     <p class="product-price">Preço</p>
+      <button class="green-button">Comprar</button>
+    </div>`;
+  }
+  else {
+    list.innerHTML = `<p id="none-products"> Não há produtos aqui :(</p>`;
+  }
 }
 
 function add(productID) {
   console.log(`Aumentando ${productID}`)
+  addProductInCart(productID, 1)
+  build_products_of_cart(getOrCreateCart())
 }
 
 function reduce(productID) {
   console.log(`Diminuindo ${productID}`)
+  removeProductInCart(productID, 1)
+  build_products_of_cart(getOrCreateCart())
 }
