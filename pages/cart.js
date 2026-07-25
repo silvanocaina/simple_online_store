@@ -67,7 +67,13 @@ async function build_products_of_cart(products) {
     </div>`;
   }
   else {
-    list.innerHTML = `<p id="none-products"> Não há produtos aqui :(</p>`;
+    list.innerHTML = `
+      <div class="none-products">
+      <p> Não há produtos aqui :(</p>
+      <p> que tal dar uma olhadinha em produtos</p>
+      <button class="neutral-button" onclick="back_button()">Ver produtos</button>
+      </div>
+      `;
   }
 }
 

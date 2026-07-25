@@ -83,8 +83,14 @@ main {
     font-size: 20px;
 }
 
-#none-products{
+.none-products {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.none-products p {
     color: var(--dim-grey);
     text-align: center;
-    margin: auto;
 }
