@@ -6,7 +6,7 @@ Projeto pessoal para testar meus conhecimentos basicos
 
 É apenas um simples site frontend de marketplace simples
 
-### Tecnologias
+### Tecnologias e Conhecimentos
 
 Estou usando essas tecnologias para construir o projeto:
 
@@ -23,7 +23,7 @@ estou usando a api da [fakestoreapi](https://fakestoreapi.com/) para o site
 - [x] Authenticação de usuário
 - [x] Pagina de Produtos
 - [x] Pagina de Produto
-- [ ] Pagina de Carrinho
+- [x] Pagina de Carrinho
 - [ ] Pagina de Pagamentos
 - [ ] Pagina de Perfil
 - [ ] Responsividade (Inclusão para diferentes tamanhos de telas)
