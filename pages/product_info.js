@@ -69,4 +69,11 @@ function build_product_info(single_product) {
 function uptade_cart_info() {
   const totalProductsInCart = getTotalProductsInCart();
   cart.innerText = `🛒 ${totalProductsInCart < 100? totalProductsInCart : '99+'}`
+
+  cart.style.display = totalProductsInCart > 0 ? "" : "none";
+}
+
+
+function back_button() {
+  window.location.href = "products.html"
 }
