@@ -7,14 +7,7 @@ const product_price_element = document.getElementById("product-price");
 const product_category_element = document.getElementById("product-category");
 
 const cart_button = document.getElementById('add-product-in-cart-button')
-const cart = document.getElementById('cart-button')
 
-
-// Adicionar evento de click para o botão de carrinho, onde redirecionar para página de carrinho
-cart.addEventListener('click', () => {
-  // triar para página de carrinho se a autenticação for valida
-  triage('cart.html', 'auth.html')
-})
 
 // Começar a logica
 start();
@@ -66,12 +59,7 @@ function build_product_info(single_product) {
   product_description_element.innerText = single_product.description;
 }
 
-function uptade_cart_info() {
-  const totalProductsInCart = getTotalProductsInCart();
-  cart.innerText = `🛒 ${totalProductsInCart < 100? totalProductsInCart : '99+'}`
 
-  cart.style.display = totalProductsInCart > 0 ? "" : "none";
-}
 
 
 function back_button() {
