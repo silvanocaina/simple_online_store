@@ -91,3 +91,7 @@ function buy() {
 
   build_products_of_cart(getOrCreateCart())
 }
+
+function back_button() {
+  window.location.href = "products.html"
+}
