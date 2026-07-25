@@ -87,21 +87,29 @@ header {
 
 .green-button {
     background-color: #32a602;
+        color: ghostwhite;
 }
 
 .red-button {
     background-color: #fe5643;
+        color: ghostwhite;
 }
 
 .blue-button {
     background-color: #5a8cff;
+        color: ghostwhite;
+}
+
+.neutral-button {
+    background-color: #e2e2e2;
+        color: var(--onyx);
 }
 
 .red-button,
 .green-button,
 .blue-button,
+.neutral-button,
 .cart-button{
-    color: ghostwhite;
     font-weight: 450;
     border: none;
     margin: 10px 0px;
@@ -112,13 +120,7 @@ header {
 .red-button:hover,
 .green-button:hover,
 .blue-button:hover,
+.neutral-button:hover,
 .cart-button:hover {
     opacity: 0.8;
-}
-
-/* */
-
-.cart-button {
-    margin: 0px;
-    background-color: var(--onyx);
 }
