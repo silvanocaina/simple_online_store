@@ -46,13 +46,17 @@ async function build_products_of_cart(products) {
     <div class="row">
         <img class="product-image" src="${product.image}"/>
         <div class="product-texts">
-            <p class="product-name">${product.title}</p>
-            <p class="product-price">total: ${price_format(product.price * inCart)} unidade: ${price_format(product.price)}</p>
-            <p class="product-category">${product.category}</p>
+            <p class="product-name">${inCart}x ${product.title}</p>
+            <div class="pair-texts">
+              <div class="product-prices">
+                <p class="product-price product-total-price ">total: ${price_format(product.price * inCart)}</p>
+                <p class="product-price product-unit-price ">unidade: ${price_format(product.price)}</p>
+              </div>
+              <p class="product-category">${product.category}</p>
+            </div>
             <div>
                 <button class="green-button" onclick="add(${product.id})" > + </button>
                 <button class="red-button"   onclick="reduce(${product.id})"> - </button>
-                <p>${inCart}</p>
             </div>
         </div>
     </div>`;
