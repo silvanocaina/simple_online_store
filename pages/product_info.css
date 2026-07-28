@@ -88,9 +88,6 @@ main {
 
 @media (max-width: 600px){
     #first-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         gap: 10px;
     }
     #product-card {
