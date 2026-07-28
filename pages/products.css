@@ -1,3 +1,7 @@
+:root{
+    --value: 250px
+}
+
 #header-tools-left {
     display: flex;
     flex-direction: row;
@@ -20,12 +24,14 @@ main {
     justify-content: center;
     list-style: none;
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
+    max-width: 1200px;
+    margin: 0px auto;
+    grid-template-columns: repeat(auto-fill, var(--value));
     gap: 20px;
 }
 
 .product-card {
-    height: 250px;
+    height: var(--value);
     border-radius: 8px;
     background-color: var(--shadow-grey);
     border: 1px solid var(--shadow-grey-2);
@@ -35,7 +41,7 @@ main {
 .product-image {
     background-color: white;
     width: 100%;
-    height: 170px;
+    height: calc(var(--value) * 0.6);
     padding: 10px;
 }
 
@@ -50,4 +56,14 @@ main {
 .product-price {
     color: palegreen;
     margin: 0px 5px;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --value: 175px;
+    }
+
+    #products {
+        gap: 10px
+    }
 }
