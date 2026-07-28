@@ -17,8 +17,10 @@ main {
 }
 
 #product-card {
-    height: 800px;
-    width: 1200px;
+    min-height: 600px;
+    min-width: min(1200px, 100vw - 30px);
+    max-height: 800px;
+    max-width: min(1200px, 100vw - 30px);
     background-color: var(--shadow-grey);
     border: 1px solid var(--shadow-grey-2);
     border-radius: 8px;
@@ -58,6 +60,17 @@ main {
     line-clamp: 2;
     -webkit-box-orient: vertical;
     font-size: 36px;
+    overflow: hidden;
+}
+
+#pair-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons {
+    display: flex;
+    gap: 8px;
 }
 
 #product-price {
@@ -70,4 +83,41 @@ main {
 #product-description {
     margin-top: 20px;
     font-size: 20px;
+}
+
+@media (max-width: 600px){
+    #first-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    #product-card {
+        min-height: 450px;
+        min-width: max(300px, 100vw - 20px);
+        max-height: 450px;
+        max-width: max(300px, 100vw - 20px);
+    }
+    #product-image {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    #product-name {
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        font-size: 24px;
+
+    }
+
+    #pair-texts {
+        flex-direction: row;
+        gap: 5px;
+    }
+    #product-description {
+        margin-top: 20px;
+        font-size: 14px;
+    }
 }
