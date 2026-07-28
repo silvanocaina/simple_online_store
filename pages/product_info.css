@@ -17,6 +17,7 @@ main {
 }
 
 #product-card {
+    display: flex;
     min-height: 600px;
     min-width: min(1200px, 100vw - 30px);
     max-height: 800px;
