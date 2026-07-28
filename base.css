@@ -49,12 +49,15 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Forms */
 .form-card {
-    width: 500px;
-    height: 400px;
+    min-height: 600px;
+    min-width: min(1200px, 100vw - 30px);
+    max-height: 800px;
+    max-width: min(1200px, 100vw - 30px);
     background-color: var(--shadow-grey-2);
     border: 1px solid var(--graphite);
     border-radius: 8px;
@@ -123,4 +126,16 @@ header {
 .neutral-button:hover,
 .cart-button:hover {
     opacity: 0.8;
+}
+
+
+
+@media (max-width: 600px){
+
+    .form-card {
+        min-height: 450px;
+        min-width: max(300px, 100vw - 30px);
+        max-height: 450px;
+        max-width: max(300px, 100vw - 30px);
+    }
 }

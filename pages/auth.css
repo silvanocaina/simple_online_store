@@ -1,3 +1,4 @@
-.center {
-    width: 500px;
+#alt-new-user-button, #alt-auth-user-button{
+    width: calc(100% - 30px);
+    max-width: 1200px;
 }
