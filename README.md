@@ -18,7 +18,7 @@ estou usando a api da [fakestoreapi](https://fakestoreapi.com/) para o site
 
 ## Roadmap
 
-- [ ] Cabeçalho
+- [x] Cabeçalho
 - [x] Criação de um novo usuário
 - [x] Authenticação de usuário
 - [x] Pagina de Produtos
@@ -26,4 +26,4 @@ estou usando a api da [fakestoreapi](https://fakestoreapi.com/) para o site
 - [x] Pagina de Carrinho
 - [ ] Pagina de Pagamentos
 - [ ] Pagina de Perfil
-- [ ] Responsividade (Inclusão para diferentes tamanhos de telas)
+- [x] Responsividade (Inclusão para diferentes tamanhos de telas)
