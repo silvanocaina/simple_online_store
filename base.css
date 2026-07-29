@@ -54,10 +54,10 @@ header {
 
 /* Forms */
 .form-card {
-    min-height: 600px;
-    min-width: min(1200px, 100vw - 30px);
-    max-height: 800px;
-    max-width: min(1200px, 100vw - 30px);
+    min-height: 450px;
+    min-width: min(600px, 100vw - 30px);
+    max-height: 450px;
+    max-width: min(600px, 100vw - 30px);
     background-color: var(--shadow-grey-2);
     border: 1px solid var(--graphite);
     border-radius: 8px;
@@ -133,9 +133,7 @@ header {
 @media (max-width: 600px){
 
     .form-card {
-        min-height: 450px;
         min-width: max(300px, 100vw - 30px);
-        max-height: 450px;
         max-width: max(300px, 100vw - 30px);
     }
 }
